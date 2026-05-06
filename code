@@ -1,7 +1,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 import os
-base_path = "/Users/seoryeonson/Downloads/instagram-son/connections/followers_and_following" #change this to ur data
+base_path = "/Users/seoryeonson/Downloads/instagram-son/connections/followers_and_following" #change this to ur data. this is the only thing that needs to be changed
 
 
 def extract_usernames(html_file): 
@@ -16,7 +16,7 @@ def extract_usernames(html_file):
 
     return usernames
 
-followers_file = os.path.join(base_path, "followers_1.html") #follower data
+followers_file = os.path.join(base_path, "followers_1.html") #follower data 
 following_file = os.path.join(base_path, "following.html") #following data
 
 followers = extract_usernames(followers_file)
